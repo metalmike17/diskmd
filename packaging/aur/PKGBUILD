@@ -13,7 +13,7 @@ optdepends=('fio: drive speed test'
             'polkit: graphical password prompt for the GUI'
             'libnotify: desktop notifications for background alerts')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('f6559c68d0dba006c4986dbf7e29d1bcbcf3c4802cabf62d8c49458631858f3c')
+sha256sums=('37159a916dd06ed8a061fbc973837fddbdaa31bfc57d1987b629ea8af9eb15f6')
 
 build() {
   cd "$pkgname-$pkgver"
