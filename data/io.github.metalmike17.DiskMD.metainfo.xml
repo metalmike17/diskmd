@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>io.github.metalmike17.DiskMD</id>
-  <name>diskmd</name>
+  <name>DiskMD</name>
   <summary>Drive health for Linux, in plain English</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
