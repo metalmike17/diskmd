@@ -91,7 +91,7 @@ $ diskmd
 
 ## GUI
 ```
-diskmd --gui          # opens in your browser; asks for your password via the normal system prompt
+diskmd --gui          # opens its own app window; asks for your password via the normal system prompt
 diskmd --gui --demo   # sample data, no root needed
 ```
 Cards per drive with wear bar, temperature, life estimate, plain-English issues and what changed since

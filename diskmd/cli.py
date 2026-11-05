@@ -56,7 +56,7 @@ def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     ap = argparse.ArgumentParser(prog="diskmd", description="Plain-English drive health for Linux.")
     ap.add_argument("devices", nargs="*", help="limit to these devices, e.g. nvme0n1 sda")
-    ap.add_argument("--gui", action="store_true", help="open the graphical (browser) interface")
+    ap.add_argument("--gui", action="store_true", help="open the graphical interface (its own window)")
     ap.add_argument("--window", choices=["auto", "qt", "app", "browser"], default="auto",
                     help="with --gui: native Qt window, Chromium app window, or plain browser (default: best available)")
     ap.add_argument("--install-launcher", action="store_true", help="add diskmd to your application menu")
