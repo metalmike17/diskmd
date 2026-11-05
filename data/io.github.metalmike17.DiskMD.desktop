@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=diskmd
+Name=DiskMD
 GenericName=Drive health
 Comment=Drive health for Linux, in plain English
 Exec=diskmd --gui
