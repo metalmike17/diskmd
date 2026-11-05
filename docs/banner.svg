@@ -26,7 +26,7 @@
   <path class="ecg" d="M300 262H520L540 250L562 278L586 240L610 270L628 262H1180" fill="none" stroke="#FF2BD6" stroke-width="2.5" filter="url(#glow2)"/>
   <g class="m">
     <text x="300" y="150" font-size="92" font-weight="800" letter-spacing="8" fill="#F2F4F8" filter="url(#glow)">DISKMD</text>
-    <rect class="cur" x="760" y="82" width="22" height="64" fill="#00C8D6"/>
+    <rect class="cur" x="696" y="82" width="22" height="64" fill="#00C8D6"/>
     <text x="304" y="198" font-size="22" letter-spacing="3" fill="#00C8D6">// IS YOUR DRIVE DYING? FIND OUT.</text>
     <text x="304" y="228" font-size="15" letter-spacing="1" fill="#A9B4C2">SMART in plain English · NVMe · SATA · USB enclosures · speed test · wear trends · daily alerts</text>
   </g>
