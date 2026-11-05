@@ -64,13 +64,16 @@ def show(url, prefer="auto"):
         if cmd:
             subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             return "app"
+    if prefer == "auto":
+        print("diskmd: no app window available, opening your browser. "
+              "For a native window install PySide6 (pip install PySide6) or a Chromium-based browser.", flush=True)
     webbrowser.open(url)
     return "browser"
 
 
 DESKTOP = """[Desktop Entry]
 Type=Application
-Name=diskmd
+Name=DiskMD
 GenericName=Drive health
 Comment=Drive health for Linux, in plain English
 Exec={exec_line}
