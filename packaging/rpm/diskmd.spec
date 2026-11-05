@@ -1,5 +1,5 @@
 Name:           diskmd
-Version:        0.1.0
+Version:        0.1.1
 Release:        1%{?dist}
 Summary:        Drive health for Linux, in plain English
 License:        MIT
@@ -55,5 +55,8 @@ PYTHONPATH=%{buildroot}%{python3_sitelib} %{python3} -m unittest discover -s tes
 %{_datadir}/icons/hicolor/scalable/apps/io.github.metalmike17.DiskMD.svg
 
 %changelog
+* Thu Nov 05 2026 metalmike17 <michaeljg0717@gmail.com> - 0.1.1-1
+- Native-window hint, DiskMD naming polish
+
 * Thu Nov 05 2026 metalmike17 <michaeljg0717@gmail.com> - 0.1.0-1
 - Initial package

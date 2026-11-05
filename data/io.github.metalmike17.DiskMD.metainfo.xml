@@ -35,6 +35,9 @@
   <content_rating type="oars-1.1"/>
   <provides><binary>diskmd</binary></provides>
   <releases>
+    <release version="0.1.1" date="2026-11-05">
+      <description><p>Native-window hint when falling back to the browser, DiskMD naming polish, new README.</p></description>
+    </release>
     <release version="0.1.0" date="2026-11-05">
       <description><p>First release.</p></description>
     </release>
