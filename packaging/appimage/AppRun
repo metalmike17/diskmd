@@ -1,0 +1,11 @@
+#!/bin/sh
+# No arguments: open the DiskMD window. With arguments it is the diskmd command line
+# (./DiskMD-x86_64.AppImage --report, ... --check, ... --install-timer).
+HERE="$(dirname "$(readlink -f "$0")")"
+PYV="$(ls "$HERE/usr/lib" | grep -m1 '^python3\.[0-9]*$' | sed 's/python//')"
+export PYTHONHOME="$HERE/usr"
+export PYTHONPATH="$HERE/usr/lib/python$PYV/site-packages"
+export PYTHONDONTWRITEBYTECODE=1
+export LD_LIBRARY_PATH="$HERE/usr/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+[ $# -eq 0 ] && set -- --gui
+exec "$HERE/usr/bin/python3" -m diskmd "$@"

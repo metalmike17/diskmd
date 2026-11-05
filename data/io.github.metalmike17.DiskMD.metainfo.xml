@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.metalmike17.DiskMD</id>
+  <name>diskmd</name>
+  <summary>Drive health for Linux, in plain English</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer id="io.github.metalmike17"><name>metalmike17</name></developer>
+  <description>
+    <p>SMART data made readable. diskmd checks every drive in your PC, explains in plain English whether it is healthy, and tells you what to do about it. USB enclosures are detected automatically.</p>
+    <ul>
+      <li>Plain-English verdicts per drive: healthy, watch, warning or failing</li>
+      <li>Link speed check: spots an SSD stuck on a USB 2.0 port or an NVMe running at x2</li>
+      <li>Kernel I/O error scan, SMART self-tests and a KDiskMark-style speed test</li>
+      <li>Wear, temperature and write-rate trends, with optional daily background alerts</li>
+      <li>Used-drive check for signs of reset or altered SMART counters</li>
+      <li>Shareable report with serial numbers left out</li>
+    </ul>
+    <p>diskmd only reads SMART data. It never writes to or reconfigures a drive. The speed test writes one temporary file inside a mounted filesystem and deletes it.</p>
+  </description>
+  <launchable type="desktop-id">io.github.metalmike17.DiskMD.desktop</launchable>
+  <url type="homepage">https://github.com/metalmike17/diskmd</url>
+  <url type="bugtracker">https://github.com/metalmike17/diskmd/issues</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/metalmike17/diskmd/main/docs/screenshot.png</image>
+      <caption>All drives at a glance</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/metalmike17/diskmd/main/docs/detail.png</image>
+      <caption>Drive detail page with speed test</caption>
+    </screenshot>
+  </screenshots>
+  <categories><category>System</category><category>Monitor</category></categories>
+  <content_rating type="oars-1.1"/>
+  <provides><binary>diskmd</binary></provides>
+  <releases>
+    <release version="0.1.0" date="2026-11-05">
+      <description><p>First release.</p></description>
+    </release>
+  </releases>
+</component>

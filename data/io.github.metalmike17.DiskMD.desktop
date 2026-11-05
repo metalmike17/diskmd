@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=diskmd
+GenericName=Drive health
+Comment=Drive health for Linux, in plain English
+Exec=diskmd --gui
+Icon=io.github.metalmike17.DiskMD
+Terminal=false
+Categories=System;Monitor;
+Keywords=disk;drive;smart;nvme;ssd;health;speed;benchmark;
+StartupWMClass=io.github.metalmike17.DiskMD

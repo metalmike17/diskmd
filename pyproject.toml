@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diskmd"
+version = "0.1.0"
+description = "Plain-English drive health for Linux: SMART made readable, USB enclosures included."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "metalmike17" }]
+keywords = ["smart", "smartctl", "nvme", "ssd", "disk", "health", "linux"]
+
+[project.scripts]
+diskmd = "diskmd.cli:main"
+
+[tool.setuptools]
+packages = ["diskmd"]
+
+[tool.setuptools.package-data]
+diskmd = ["data/*.svg"]
+
+[project.urls]
+Homepage = "https://github.com/metalmike17/diskmd"
+Issues = "https://github.com/metalmike17/diskmd/issues"
