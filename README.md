@@ -1,11 +1,31 @@
-# diskmd
+<div align="center">
+
+<img src="docs/banner.svg" alt="DiskMD: drive health for Linux, in plain English" width="100%">
+
+<br>
+
+<a href="https://github.com/metalmike17/diskmd/actions/workflows/test.yml"><img src="https://github.com/metalmike17/diskmd/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
+<a href="https://github.com/metalmike17/diskmd/releases/latest"><img src="https://img.shields.io/github/v/release/metalmike17/diskmd?style=for-the-badge&labelColor=0D0F14&color=FF2BD6&label=release" alt="Latest release"></a>
+<img src="https://img.shields.io/badge/license-MIT-00C8D6?style=for-the-badge&labelColor=0D0F14" alt="License">
+<img src="https://img.shields.io/badge/Python-stdlib%20only-FF2BD6?style=for-the-badge&labelColor=0D0F14" alt="Python, no dependencies">
+<a href="https://github.com/metalmike17/diskmd/stargazers"><img src="https://img.shields.io/github/stars/metalmike17/diskmd?style=for-the-badge&labelColor=0D0F14&color=FF2BD6" alt="Stars"></a>
+
+<br><br>
+
+**[⬇️ Download](https://github.com/metalmike17/diskmd/releases/latest)** &nbsp;·&nbsp; **[🔍 Features](#features)** &nbsp;·&nbsp; **[🚀 Install](#install)**
+
+<br>
+
+<img src="docs/screenshot.png" alt="DiskMD checking four drives" width="760">
+
+</div>
+
+<img src="docs/divider.svg" width="100%" alt="">
 
 **Drive health for Linux, in plain English.** One command, no flags, no dependencies.
 
 `smartctl` is powerful but hostile: raw attribute tables, a different `-d` flag for every USB
 enclosure, and scary-looking numbers that mean nothing. `diskmd` does the digging for you.
-
-![diskmd GUI](docs/screenshot.png)
 
 <details><summary>Drive detail page with speed test</summary>
 
@@ -34,6 +54,8 @@ $ diskmd
 
 4 drive(s) checked.
 ```
+
+<img src="docs/divider.svg" width="100%" alt="">
 
 ## Features
 - **Auto-detects USB bridges** - tries `sat`, `sntasmedia`, `sntjmicron`, `sntrealtek`... until one works.
@@ -65,6 +87,8 @@ $ diskmd
 - **Shareable report** - `diskmd --report` prints Markdown for forum posts. Serial numbers are never included.
 - NVMe, SATA SSD and HDD. `--json` for scripts. Exit code = worst verdict (0 ok, 1 watch, 2 warn, 3 fail).
 
+<img src="docs/divider.svg" width="100%" alt="">
+
 ## GUI
 ```
 diskmd --gui          # opens in your browser; asks for your password via the normal system prompt
@@ -73,6 +97,8 @@ diskmd --gui --demo   # sample data, no root needed
 Cards per drive with wear bar, temperature, life estimate, plain-English issues and what changed since
 last time. The GUI is a tiny local web page (Python stdlib only): it listens on 127.0.0.1 with a random
 access token, runs as you, and only the scan itself gets root (via `pkexec`).
+
+<img src="docs/divider.svg" width="100%" alt="">
 
 ## Install
 Requires Python 3.10+ and `smartmontools`. Optional: `fio` (speed test), PySide6 (native window).
@@ -90,6 +116,8 @@ diskmd --gui      # the window
 diskmd            # terminal report (asks for sudo itself)
 ```
 Or run from a checkout: `python3 -m diskmd`.
+
+<img src="docs/divider.svg" width="100%" alt="">
 
 ## Notes
 - SMART "PASSED" is a weak signal; diskmd looks at the individual counters too.
